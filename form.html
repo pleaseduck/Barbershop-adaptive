@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Записаться</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="#" alt="BORODINSKI logo" width="226" height="30">
+      </div>
+      <nav class="main-menu">
+        <ul class="nav-list">
+          <li class="nav-list__item"><a href="#">Главная</a></li>
+          <li class="nav-list__item"><a href="#">Наши работы</a></li>
+          <li class="nav-list__item  nav-list__item--active"><a href="#">Записаться</a></li>
+          <li class="nav-list__item"><a href="#">Контакты</a></li>
+          <li class="nav-list__item"><a href="#">HTML Academy</a></li>
+          <li class="nav-list__item"><a href="#">Вход</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="post" class="haircut-reg">
+        <h1 class="haircut-reg__title">Запись на стрижку</h1>
+        <fieldset class="haircut-reg__questionary questionary">
+          <input name="surname" type="text" placeholder="Фамилия" class="questionary__input  questionary__input--text">
+          <input name="name" type="text" placeholder="Имя" class="questionary__input  questionary__input--text" required>
+          <input name="patronymic" type="text" placeholder="Отчество" class="questionary__input  questionary__input--text">
+          <input name="phone number" type="text" placeholder="Контактный телефон" class="questionary__input  questionary__input--text" required>
+          <input name="e-mail" type="text" placeholder="Контактный e-mail" class="questionary__input  questionary__input--text" required>
+          <textarea name="extra text"  cols="30" rows="10" class="questionary__input  questionary__input--textarea" placeholder="Доп.информация для мастера"></textarea>
+        </fieldset>
+        <fieldset class="beard-choice">
+          <legend class="beard-choice__legend">Выберите модель бороды:</legend>
+          <input type="radio" class="beard-choice__radio" id="beard-choice__radio1">
+          <label for="beard-choice__radio1" class="beard-choice__label">
+            адмирал<br>
+            <img src="#" alt="Борода адмирала" width="52" height="49">
+          </label>
+          <input type="radio" class="beard-choice__radio" id="beard-choice__radio2">
+          <label for="beard-choice__radio2" class="beard-choice__label">
+            лесоруб<br>
+            <img src="#" alt="Борода лесоруба" width="58" height="68">
+          </label>
+          <input type="radio" class="beard-choice__radio" id="beard-choice__radio3">
+          <label for="beard-choice__radio3" class="beard-choice__label">
+            полярник<br>
+            <img src="#" alt="Борода полярника" width="64" height="78">
+          </label>
+          <input type="radio" class="beard-choice__radio" id="beard-choice__radio4">
+          <label for="beard-choice__radio4" class="beard-choice__label">
+            боярин<br>
+            <img src="#" alt="Борода боярина" width="58" height="98">
+          </label>
+          <input type="radio" class="beard-choice__radio" id="beard-choice__radio5">
+          <label for="beard-choice__radio5" class="beard-choice__label">
+            мудрец<br>
+            <img src="#" alt="Борода мудреца" width="46" height="105">
+          </label>
+        </fieldset>
+        <fieldset class="extra-service">
+          <legend class="extra-service__legend">Дополнительные услуги:</legend>
+          <input type="checkbox" name="Покрасить бороду" id="extra-service__checkbox1" class="extra-service__checkbox">
+          <label for="extra-service__checkbox1" class="extra-service__label">Покрасить бороду</label>
+          <input type="checkbox" name="Накрутить усы" id="extra-service__checkbox2" class="extra-service__checkbox">
+          <label for="extra-service__checkbox2" class="extra-service__label">Накрутить усы</label>
+          <input type="checkbox" name="Причесать бороду" id="extra-service__checkbox3" class="extra-service__checkbox">
+          <label for="extra-service__checkbox3" class="extra-service__label">Причесать бороду</label>
+          <input type="checkbox" name="Подровнять виски" id="extra-service__checkbox4" class="extra-service__checkbox">
+          <label for="extra-service__checkbox4" class="extra-service__label">Подровнять виски</label>
+          <input type="checkbox" name="Убрать седину" id="extra-service__checkbox5" class="extra-service__checkbox">
+          <label for="extra-service__checkbox5" class="extra-service__label">Убрать седину</label>
+          <input type="checkbox" name="Отполировать лысину" id="extra-service__checkbox6" class="extra-service__checkbox">
+          <label for="extra-service__checkbox6" class="extra-service__label">Отполировать лысину</label>
+        </fieldset>
+        <input type="submit"  value="Отправить заявку" class="button haircut-reg__button">
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="contacts">
+        <b class="contacts__title">Барбершоп Бородинский</b>
+        <p class="contacts__address">г.Санкт-Петербург,ул.Большая Конюшенная 19/8</p>
+        <span class="contacts__phone-number button">+7(812)555-66-66</span>
+      </div>
+      <div class="social">
+        <div class="vk-link">Вконтакте</div>
+        <div class="fb-link">Фейсбук</div>
+        <div class="inst-link">Инстаграм</div>
+      </div>
+      <div class="designer">
+        <span class="designer__title">Задизайнено:</span>
+        <a href="#" class="designer__link button">HTML academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
